@@ -1,0 +1,85 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body,
+p,
+input,
+select,
+textarea,
+button {
+  font-family: 'Poppins', sans-serif;
+}
+
+img.rounded-lg-3 {
+  max-width: 100%;
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+.img-size {
+  width: 180rem;
+  height: 180rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fui {
+  max-width: 40px;
+}
+
+/* Navbar hover effect */
+.navbar-hover:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Navbar item hover effect */
+.navbar-hover-item:hover {
+  text-decoration: none;
+  color: #007bff;
+  transform: scale(1.05);
+}
+
+
+button {
+  cursor: pointer;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.img-size {
+  width: 180rem;
+  height: 180rem;
+}
+
+@media (max-width: 768px) {
+  .fui {
+    max-width: 30px;
+  }
+
+  .ft {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 630px) {
+  .fui {
+    max-width: 20px;
+  }
+
+  .ft {
+    font-size: 50%;
+  }
+}

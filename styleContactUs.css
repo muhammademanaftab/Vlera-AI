@@ -1,0 +1,100 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body,
+p,
+input,
+select,
+textarea,
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+#home::before {
+    top: 0;
+    content: "";
+    background: url(bg-1.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 215%;
+    width: 100%;
+    z-index: -1;
+}
+
+#home::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 205%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    top: 0;
+}
+
+.fui {
+    max-width: 40px;
+}
+
+@media (max-width: 768px) {
+    .fui {
+        max-width: 30px;
+    }
+    .ft {
+        font-size: 70%;
+    }
+    #home::before {
+        top: 0;
+        content: "";
+        background: url(bg-1.jpg) no-repeat center center/cover;
+        position: absolute;
+        height: 270%;
+        width: 100%;
+        z-index: -1;
+    }
+    #home::after {
+        content: "";
+        background-color: black;
+        position: absolute;
+        height: 265%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.2;
+        top: 0;
+    }
+}
+
+@media (max-width: 630px) {
+    .fui {
+        max-width: 20px;
+    }
+    .ft {
+        font-size: 50%;
+    }
+    #home::before {
+        top: 0;
+        content: "";
+        background: url(bg-1.jpg) no-repeat center center/cover;
+        position: absolute;
+        height: 300%;
+        width: 100%;
+        z-index: -1;
+    }
+    #home::after {
+        content: "";
+        background-color: black;
+        position: absolute;
+        height: 295%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.2;
+        top: 0;
+    }
+}

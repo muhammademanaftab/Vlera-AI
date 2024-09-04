@@ -1,0 +1,100 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body, p, input, select, textarea, button {
+    font-family: 'Poppins', sans-serif;
+}
+
+  
+
+.tick-icon {
+    width: 24px;
+    height: 24px;
+    color: #28a745;
+}
+
+.fui {
+    max-width: 40px;
+}
+
+.gift {
+    height: 4rem;
+    width: 4rem;
+}
+
+.text-body-emphasis {
+    color: #000000;
+}
+
+.text-body-secondary {
+    color: #6c757d;
+}
+
+.border-top {
+    border-top: 1px solid #dee2e6;
+}
+
+.img-fluid {
+    max-width: 40px;
+}
+
+/* Card Hove Effect */
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar hover effect */
+.navbar-hover:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Navbar item hover effect */
+.navbar-hover-item:hover {
+    text-decoration: none;
+    color: #007bff;
+    transform: scale(1.05);
+}
+
+#one {
+    width: 34%;
+}
+
+#two {
+    width: 22%;
+}
+
+#three {
+    width: 22%;
+}
+
+#four {
+    width: 22%;
+}
+
+@media (max-width: 568px) {
+    .pt {
+        font-size: 95%;
+    }
+}
+
+@media (max-width: 768px) { 
+    .fui {
+        max-width: 30px;
+    }
+    .ft {
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 630px) { 
+    .fui {
+        max-width: 20px;
+    }
+    .ft {
+        font-size: 50%;
+    }
+}

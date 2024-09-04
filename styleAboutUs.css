@@ -1,0 +1,108 @@
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body, p, input, select, textarea, button {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar-hover:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.fui {
+    max-width: 40px;
+}
+
+#video{
+    width: 100%;
+    height: 100%;
+}
+
+/* Navbar item hover effect */
+.navbar-hover-item:hover {
+    text-decoration: none;
+    color: #007bff;
+    transform: scale(1.05);
+}
+
+
+.custom-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-item {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.list-item:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.custom-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-item {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    position: relative;
+    font-size: 1.0rem;
+}
+
+.list-item:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+.expand-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.expand-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.expand-icon:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) { 
+    .fui {
+        max-width: 30px;
+    }
+    .ft {
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 630px) { 
+    .fui {
+        max-width: 20px;
+    }
+    .ft {
+        font-size: 50%;
+    }
+}

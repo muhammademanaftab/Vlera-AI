@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contactus | Vlera AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styleContactUs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body id="home">
+    <!-- Navbar -->
+    <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom navbar-hover">
+        <div class="col-md-2 mx-3">
+            <div class="navbar fw-bold">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="Signin.html">
+                        Vlera AI
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 mx-3">
+                <li><a href="index.html" class="nav-link px-2 navbar-hover-item text-white">Home</a></li>
+                <li><a href="pricing.html" class="nav-link px-2 navbar-hover-item text-white">Pricing</a></li>
+                <li><a href="Contactus.html" class="nav-link px-2 link-secondary navbar-hover-item">Contact us</a></li>
+                <li><a href="Aboutus.html" class="nav-link px-2 navbar-hover-item text-white">About us</a></li>
+            </ul>
+        </nav>
+        <div class="col-md-3 text-end px-3">
+            <a href="Signin.html" class="btn btn-primary me-3 fw-bold">Login</a>
+        </div>
+
+    </header>
+
+    <!-- First Section  -->
+    <div class="row px-4 m-auto my-3 align-items-center justify-content-center">
+        <div class="container">
+            <main>
+
+                <!-- First Section -->
+                <div class="py-5 text-white">
+                    <h1 class="text-center">Contact us</h1>
+                    <p class="lead text-center">
+                        Welcome to Vlera AI! Creating an account is your gateway to unlocking a world of possibilities.
+                        By
+                        signing up, you gain access to a wide range of features and services tailored to your needs.
+                        Sign up
+                        now and embark on your journey with us!.</p>
+                </div>
+
+                <!-- Second Section Form -->
+                <div id="error" class="text-white text-center"></div>
+                <div class="container text-white">
+                    <h2> Personal Information </h2>
+                    <form id="myForm" action="mailto:emanafatb2022@gmail.com" method="post" enctype="text/plain">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label for="firstName" class="form-label"> <strong> First name </strong></label>
+                                <input type="text" name="firstName" class="form-control" id="firstName" size="50"
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="lastName" class="form-label"><strong> Last name </strong></label>
+                                <input type="text" name="lastName" class="form-control" id="lastName" required="">
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="male" class="form-label"><strong>Gender:</strong></label> &nbsp;&nbsp;&nbsp;
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" id="male" name="gender" value="Male">
+                                    <label class="form-check-label" for="male">Male</label>
+                                </div>
+                                &nbsp;&nbsp;
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" id="female" name="gender" value="Female">
+                                    <label class="form-check-label" for="female">Female</label>
+                                </div>
+                                &nbsp;&nbsp;
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" id="other" name="gender" value="Other">
+                                    <label class="form-check-label" for="other">Other</label>
+                                </div>
+                            </div>
+                            
+
+
+                            <div class="col-12">
+                                <label for="username" class="form-label"> <strong> Username </strong></label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" name="userName" class="form-control" id="username"
+                                        placeholder="Username" required="">
+                                    <div class="invalid-feedback">
+                                        Your username is required.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="email" class="form-label"><strong> Email </strong> </label>
+                                <input type="email" name="email" class="form-control" id="email"
+                                    placeholder="you@example.com">
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address for creating account.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="message" class="form-label"><strong>Message</strong></label>
+                                <textarea cols="100" rows="3" name="message" class="form-control" id="message" maxlength="150" placeholder="Write your message here" required=""></textarea>
+                                <div class="invalid-feedback">
+                                    Please enter your message here.
+                                </div>
+                            </div>
+                            
+
+                            <div class="col-md-5">
+                                <label for="country" class="form-label"><strong>Country</strong></label>
+                                <select name="country" class="form-select" id="country" required="">
+                                    <option value="">Choose...</option>
+                                    <option>United States</option>
+                                    <option>Hungary</option>
+                                    <option>Netherland</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid country.
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="state" class="form-label"><strong>State</strong></label>
+                                <select name="state" class="form-select" id="state" required="">
+                                    <option value="">Choose...</option>
+                                    <option>California</option>
+                                    <option>Budapest</option>
+                                    <option>Amsterdam</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="zip" class="form-label"><strong>Zip</strong></label>
+                                <input type="text" name="zip" class="form-control" id="zip" placeholder="" required="">
+                                <div class="invalid-feedback">
+                                    Zip code required.
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="form-check">
+                            <input type="checkbox" name="newsletter" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Subscribe to Newsletter</label>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button class="my-4 me-md-2 w-100 btn btn-primary" type="reset">Reset</button>
+                            <button class="my-4 w-100 btn btn-primary" type="submit">Submit</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- Footer -->
+   
+    <div class="mx-5 mb-5">
+        <div class="mx-5">
+            <div class="mx-5">
+                <!-- First Part  -->
+                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                    <div class="col-md-4 d-flex align-items-center">
+                        <div class="navbar fw-bold">
+                            <div class="container-fluid ">
+                                <a class="navbar-brand ft text-white" href="index.html">
+                                    Vlera AI
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                        <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/"><img
+                                    src="Facebook.png" alt="Picture of Facebook Logo." class="img-fluid fui"></a></li>
+                        <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/"><img
+                                    src="Instagram.png" alt="Picture of Instagram Logo." class="img-fluid fui"></a>
+                        </li>
+                        <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/"><img
+                                    src="Twitter.png" alt="Picture of Twitter Logo." class="img-fluid fui "></a></li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Script to check whether form is good or not -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("myForm").addEventListener("submit", function (event) {
+                var firstName = document.getElementById("firstName").value;
+                var lastName = document.getElementById("lastName").value;
+                var email = document.getElementById("email").value;
+                var message = document.getElementById("message").value;
+                var country = document.getElementById("country").value;
+                var state = document.getElementById("state").value;
+                var zip = document.getElementById("zip").value;
+                var gender = document.querySelector('input[name="gender"]:checked');
+                var errorElement = document.getElementById("error");
+
+                // Reset previous errors
+                errorElement.innerHTML = "";
+
+                // First Name validation
+                if (firstName.trim() === "") {
+                    errorElement.innerHTML += "<p class='error'>First name is required !</p>";
+                    event.preventDefault();
+                }
+
+                // Last Name validation
+                if (lastName.trim() === "") {
+                    errorElement.innerHTML += "<p class='error'>Last name is required !</p>";
+                    event.preventDefault();
+                }
+
+                // Email validation
+                if (email.trim() === "") {
+                    errorElement.innerHTML += "<p class='error'>Email is required !</p>";
+                    event.preventDefault();
+                }
+
+                // Gender validation
+                if (!gender) {
+                    errorElement.innerHTML += "<p class='error'>Gender is required !</p>";
+                    event.preventDefault();
+                }
+
+                // Message validation
+                if (message.trim() === "") {
+                    errorElement.innerHTML += "<p class='error'>Message is required !</p>";
+                    event.preventDefault();
+                }
+
+                // Country validation
+                if (country.trim() === "") {
+                    errorElement.innerHTML += "<p class='error'>Country is required !</p>";
+                    event.preventDefault();
+                }
+
+                // State validation
+                if (state.trim() === "") {
+                    errorElement.innerHTML += "<p class='error'>State is required !</p>";
+                    event.preventDefault();
+                }
+
+                // Zip validation
+                if (zip.trim() === "") {
+                    errorElement.innerHTML += "<p class='error'>Zip code is required !</p>";
+                    event.preventDefault();
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
